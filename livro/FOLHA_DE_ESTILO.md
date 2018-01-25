@@ -50,7 +50,7 @@ Fazemos a conversão do livro de código LaTeX para HTML usando o pacote [TeX4ht
 
 * Não usar o ambiente `align`: no lugar use o ambiente `eqnarray` ou o `split` dentro de um ambiente `equation`.
 
-* Não usar as sintaxes `[\ \]` e `$$ $$`, no lugar use o ambiente `equation`.
+* Não usar as sintaxes `\[ \]` e `$$ $$`, no lugar use o ambiente `equation`.
 
 * Não usar `array` para composição de tabelas. A alternativa é usar o ambiente `tabular`, por exemplo:
 
