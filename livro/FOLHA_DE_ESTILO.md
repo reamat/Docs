@@ -30,19 +30,7 @@ Para informações sobre como compilar o código fonte, leia o arquivo `README.m
 
 ### Compatibilidade
 
-O código LaTeX do livro deve permitir sua compilação tanto com `latex` como com `pdflatex`, além de permitir a compilação nos formatos HTML e EPUB. Ao adicionar suas colaborações, certifique-se que elas são compatíveis testando a compilação definida no `Makefile`. Para testar a compilação, use:
-
-    $ make
-
-e
-
-    $ make dvi
-
-Para testar a compilação de todos os formatos disponíveis, digite:
-
-    $ make all
-
-ATENÇÃO: a compilação de todos os formatos pode levar vários minutos!
+O código LaTeX do livro deve permitir sua compilação tanto com `latex` como com `pdflatex`, além de permitir a compilação no formato HTML. Ao adicionar suas colaborações, certifique-se que elas são compatíveis testando a compilação definida no `Makefile`. Para mais informações sobre a compilação dos materiais disponíveis, consulte o README.md no repositório GitHub do recurso de seu interesse.
 
 #### Instruções LaTeX não compatíveis
 
@@ -54,14 +42,14 @@ Fazemos a conversão do livro de código LaTeX para HTML usando o pacote [TeX4ht
 
 * Não usar `array` para composição de tabelas. A alternativa é usar o ambiente `tabular`, por exemplo:
 
-	\begin{center}
-	  \begin{tabular}{r|c|c}
-	    $h$ & $Df(1)$ & $|f'(1) - D_{+,h}F(1)|$ \\ \hline
-            $10^{-1}$ & $-8,67062\E-01$ & $2,55909\E-02$\\
-            $10^{-2}$ & $-8,44158\E-01$ & $2,68746\E-03$\\
-            $10^{-14}$ & $-8,43769\E-01$ & $2,29851\E-03$ \\\hline
-	  \end{tabular}
-	\end{center}
+		\begin{center}
+			\begin{tabular}{r|c|c}
+				$h$ & $Df(1)$ & $|f'(1) - D_{+,h}F(1)|$ \\ \hline
+				$10^{-1}$ & $-8,67062\E-01$ & $2,55909\E-02$\\
+				$10^{-2}$ & $-8,44158\E-01$ & $2,68746\E-03$\\
+				$10^{-14}$ & $-8,43769\E-01$ & $2,29851\E-03$ \\\hline
+			\end{tabular}
+		\end{center}
 
 * Não colocar `label` dentro de colchetes.
 

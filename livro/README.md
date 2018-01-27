@@ -1,14 +1,21 @@
 # Padrões para os livros colaborativos
 
+Aqui você encontra os padrões para os livros colaborativos do projeto REAMAT (https://www.ufrgs.br/reamat).
+
+Qualquer dúvida ou sugestão, poste no nosso fórum https://www.ufrgs.br/reamat/forum.html, crie um _issue_ no repositório do livro ou escreva para reamat@ufrgs.br.
+
 ## Licença
+
 Este trabalho está licenciado sob a Licença Creative Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada. Para ver uma cópia desta licença, visite <https://creativecommons.org/licenses/by-sa/3.0/> ou envie uma carta para Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ## Sobre o código fonte
+
 O código fonte está escrito em [Latex](https://latex-project.org/) e as referências bibliográficas em [BibTex](http://www.bibtex.org/), testado em computador Linux com o pacote [TexLive](http://www.tug.org/texlive/). O texto está em formatação **utf-8**.
 
 ## Compilando
 
 ### Em computador Linux
+
 O código LaTeX está testado em computador [Linux](https://pt.wikipedia.org/wiki/Linux) com o pacote [TexLive](https://www.tug.org/texlive/) instalado. O livro pode ser compilado com:
 
     $ make
@@ -30,17 +37,9 @@ O livro também pode ser compilado em formato HTML, digitando:
 
 Este comando cria a pasta `./html` onde todo os arquivos da versão HTML do livro são colocados.
 
-- EPUB:
-
-		$ make epub
-
-Este comando cria o arquivo `main.epub` contendo o livro em formato EPUB.
-
 ### Outros sistemas operacionais
 
-O código LaTeX pode ser compilado em outros sistemas operacionais.
-
-Em primeiro lugar, deve-se editar o arquivo de configuração `config.knd`. Este arquivo contém instruções TeX para controlar o formato e a versão do livro. Por exemplo, para setar o formato do livro em PDF, garanta que este arquivo contenha o seguinte texto:
+O código LaTeX pode ser compilado em outros sistemas operacionais. Para tanto, deve-se editar o arquivo de configuração `config.knd`. Este arquivo contém instruções TeX para controlar o formato e a versão do livro. Por exemplo, para setar o formato do livro em PDF, garanta que este arquivo contenha o seguinte texto:
 
     \isbooktrue \ishtmlfalse
 
