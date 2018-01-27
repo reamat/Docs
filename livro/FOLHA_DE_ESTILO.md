@@ -30,19 +30,7 @@ Para informações sobre como compilar o código fonte, leia o arquivo `README.m
 
 ### Compatibilidade
 
-O código LaTeX do livro deve permitir sua compilação tanto com `latex` como com `pdflatex`, além de permitir a compilação nos formatos HTML e EPUB. Ao adicionar suas colaborações, certifique-se que elas são compatíveis testando a compilação definida no `Makefile`. Para testar a compilação, use:
-
-    $ make
-
-e
-
-    $ make dvi
-
-Para testar a compilação de todos os formatos disponíveis, digite:
-
-    $ make all
-
-ATENÇÃO: a compilação de todos os formatos pode levar vários minutos!
+O código LaTeX do livro deve permitir sua compilação tanto com `latex` como com `pdflatex`, além de permitir a compilação no formato HTML. Ao adicionar suas colaborações, certifique-se que elas são compatíveis testando a compilação definida no `Makefile`. Para mais informações sobre a compilação dos materiais disponíveis, consulte o README.md no repositório GitHub do recurso de seu interesse.
 
 #### Instruções LaTeX não compatíveis
 
