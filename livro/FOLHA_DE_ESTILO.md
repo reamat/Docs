@@ -54,14 +54,14 @@ Fazemos a conversão do livro de código LaTeX para HTML usando o pacote [TeX4ht
 
 * Não usar `array` para composição de tabelas. A alternativa é usar o ambiente `tabular`, por exemplo:
 
-	\begin{center}
-	  \begin{tabular}{r|c|c}
-	    $h$ & $Df(1)$ & $|f'(1) - D_{+,h}F(1)|$ \\ \hline
-            $10^{-1}$ & $-8,67062\E-01$ & $2,55909\E-02$\\
-            $10^{-2}$ & $-8,44158\E-01$ & $2,68746\E-03$\\
-            $10^{-14}$ & $-8,43769\E-01$ & $2,29851\E-03$ \\\hline
-	  \end{tabular}
-	\end{center}
+		\begin{center}
+			\begin{tabular}{r|c|c}
+				$h$ & $Df(1)$ & $|f'(1) - D_{+,h}F(1)|$ \\ \hline
+				$10^{-1}$ & $-8,67062\E-01$ & $2,55909\E-02$\\
+				$10^{-2}$ & $-8,44158\E-01$ & $2,68746\E-03$\\
+				$10^{-14}$ & $-8,43769\E-01$ & $2,29851\E-03$ \\\hline
+			\end{tabular}
+		\end{center}
 
 * Não colocar `label` dentro de colchetes.
 
