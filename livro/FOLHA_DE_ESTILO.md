@@ -8,7 +8,7 @@ Qualquer dúvida, poste no nosso fórum https://www.ufrgs.br/reamat/forum.html, 
 
 ## Regionalização e estilo de escrita
 
-O livro está escrito em língua portuguesa, seguindo os costumes linguísticos brasileiros. Dá-se prioridade à ortografia prevista no Acordo Ortográfico de 1990.
+Os livros estão escritos em língua portuguesa, seguindo os costumes linguísticos brasileiros. Dá-se prioridade à ortografia prevista no Acordo Ortográfico de 1990.
 
 ### Capitalização 
 
@@ -22,7 +22,7 @@ Em referências internas, como a teoremas, lemas e exercícios, usa-se maiúscul
 
 ## Código fonte LaTeX
 
-O livro está escrito em [LaTex](https://latex-project.org/) e os arquivos estão em `charset=utf-8`.
+Os livros estão escritos em [LaTex](https://latex-project.org/) e os arquivos estão em `charset=utf-8`.
 
 O arquivo principal `main.tex` encontra-se no diretório principal do livro no repositório do mesmo. O código LaTeX de cada capítulo encontra-se em um subdiretório específico com nome `cap_abrev`, onde `abrev` é uma abreviação que lembre o conteúdo do capítulo. Por sua vez, o arquivo `cap_abrev.tex` contém o código LaTeX referente a este capítulo.
 
@@ -82,7 +82,7 @@ A fim de facilitar a discussão sobre o material do livro, **todas as equações
 
 #### Uso da vírgula
 
-O livro usa o pacote LaTeX [`icomma`](https://www.ctan.org/pkg/icomma). Desta forma, para que um espaço apareça após uma vírgula é necessário por o espaço no código LaTeX. Por exemplo, o código LaTeX `$1,24$` produz o número 1,24, enquanto o código `$1, 24$` porduz os números 1 e 24 separados por uma vírgula e um espaço.
+Os livros usam o pacote LaTeX [`icomma`](https://www.ctan.org/pkg/icomma). Desta forma, para que um espaço apareça após uma vírgula é necessário por o espaço no código LaTeX. Por exemplo, o código LaTeX `$1,24$` produz o número 1,24, enquanto o código `$1, 24$` porduz os números 1 e 24 separados por uma vírgula e um espaço.
 
 #### Números em notação científica
 
@@ -106,7 +106,7 @@ Processos iterativos devem ser indicados com superíndices:
 
 ### Exercícios
 
-O livro conta com três tipos de exercícios, os intitulados "Exercícios resolvidos", "Exercícios" e "Exercícios finais".
+Os livros podem contar com três tipos de exercícios, os intitulados "Exercícios resolvidos", "Exercícios" e "Exercícios finais". Recomenda-se que cada seção do livro conte com uma subseção de exercícios resolvidos seguida de outra com exercícios.
 
 #### Exercícios resolvidos
 
@@ -124,8 +124,12 @@ A resolução do exercício deve ser colocada dentro de um ambiente `resol`, col
 
     \begin{resol}
 	    Escreva aqui a resolução completa (detalhada) do exercício.
-    \end{resol}
+	\end{resol}
+		
+No caso de livros com apenas exercícios no final de capítulo, em vez de subseção não numerada usar seção numerada, i.e.:
 
+	\section{Exercícios resolvidos}
+		
 #### Exercícios
 
 Exercícios com resposta ou sem devem ser colocados em subseção da seção a que se referem. A subseção deve ser não numerada e intitulada "Exercícios", i.e.:
@@ -143,6 +147,10 @@ Caso o exercício tenha resposta (para resolução completa, veja a subsecção 
     \begin{resp}
 	   Escreva aqui a resposta do exercício.
     \end{resp}
+
+No caso de livros com apenas exercícios no final de capítulo, em vez de subseção não numerada usar seção numerada, i.e.:
+
+	\section{Exercícios}
 
 #### Exercícios finais
 
@@ -162,6 +170,14 @@ No caso do exercícios ter resposta indicada, esta deve ser colocada dentro de u
 	   Escreva aqui a resposta do exercício.
     \end{resp}
 
+Esta estrutura de exercícios não é recomendada para livros com apenas exercícios no final de capítulo.
+
 ### Inserção de códigos computacionais
 
-O livro deve ser versátil o suficiente para não depender de qualquer pacote computacional em específico. Para tanto, textos envolvendo algum pacote (ou alguma linguagem) computacional devem ser encapsulados dentro de uma declaração `se ... então`.
+Salvo livros com objetivo específico em alguma linguagem computacional, eles devem ser versáteis o suficiente para não depender de qualquer linguagem e/ou pacote computacional em específico. Para tanto, textos envolvendo algum pacote (ou alguma linguagem) computacional devem ser encapsulados dentro de uma declaração `se ... então`. Os códigos (_scripts_) computacionais devem ser encapsulados em ambiente `verbatim`, por exemplo
+
+	\ifispython
+	  \begin{verbatim}
+		  print("Olá, mundo!")
+	  \end{verbatim}
+	\fi
