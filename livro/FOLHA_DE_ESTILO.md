@@ -51,7 +51,7 @@ Fazemos a conversão do livro de código LaTeX para HTML usando o pacote [TeX4ht
 			\end{tabular}
 		\end{center}
 
-* Não colocar `label` dentro de colchetes.
+* Não colocar `label` dentro de colchetes ou chaves.
 
 ### Capítulos
 
@@ -82,7 +82,7 @@ A fim de facilitar a discussão sobre o material do livro, **todas as equações
 
 #### Uso da vírgula
 
-Os livros usam o pacote LaTeX [`icomma`](https://www.ctan.org/pkg/icomma). Desta forma, para que um espaço apareça após uma vírgula é necessário por o espaço no código LaTeX. Por exemplo, o código LaTeX `$1,24$` produz o número 1,24, enquanto o código `$1, 24$` porduz os números 1 e 24 separados por uma vírgula e um espaço.
+Os livros usam o pacote LaTeX [`icomma`](https://www.ctan.org/pkg/icomma). Desta forma, para que um espaço apareça após uma vírgula é necessário por o espaço no código LaTeX. Por exemplo, o código LaTeX `$1,24$` produz o número 1,24, enquanto o código `$1, 24$` produz os números 1 e 24 separados por uma vírgula e um espaço.
 
 #### Números em notação científica
 
